@@ -1,0 +1,53 @@
+.page-wrapper {
+  height: 200vh;
+  width: 100vw;
+  background: black;
+
+  position: relative;
+
+  img {
+    z-index: 2;
+    position: absolute;
+    max-height: 70%;
+    object-fit: contain;
+
+    top: 55%;
+    left: 50%;
+  }
+
+  img,
+  h1 {
+    // transition: transform 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  .text-parent {
+    position: absolute;
+    top: 35%;
+
+    &:first-of-type {
+      z-index: 1;
+    }
+
+    &:last-of-type {
+      z-index: 3;
+    }
+    h1 {
+      color: white;
+      line-height: 110%;
+      font-size: 8.1vw;
+      white-space: nowrap;
+      font-family: sequel, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      font-weight: bold;
+      &.outline {
+        -webkit-text-stroke: 5px white;
+        text-stroke: 1px white;
+        color: transparent;
+      }
+      &:last-of-type {
+        margin-left: -30%;
+      }
+    }
+  }
+}
