@@ -1,0 +1,27 @@
+.family {
+  display: flex;
+  transform: translate3d(0, 0, 0);
+
+  .family-item {
+    min-width: 50vw;
+    margin-left: 3.33333vw;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+
+  .family-item-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: 150%;
+      pointer-events: none;
+    }
+  }
+}

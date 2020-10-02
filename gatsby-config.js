@@ -8,6 +8,7 @@ module.exports = {
   /* Your site config here */
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-typescript`,
     {
       resolve: "gatsby-plugin-antd",
       options: {
@@ -24,4 +25,4 @@ module.exports = {
       },
     },
   ],
-}
+};
